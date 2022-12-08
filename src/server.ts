@@ -18,7 +18,7 @@ async function start() {
       while (true) {
         const amount = (await yenContract.getMints()).div(2);
         log(amount.div(eth.ether).toString())
-        if (amount.gte(eth.ether.mul(1050))) {
+        if (amount.gte(eth.ether.mul(1450))) {
           await mint();
         }
         await sleep(11);
